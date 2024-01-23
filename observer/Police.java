@@ -8,6 +8,11 @@ public class Police implements Observer {
     private String notes;
     private ArrayList<String> people;
 
+    /**
+     * Creates a new Police that observes the specified Subject
+     * @param cook Subject to observe
+     * @author Isaac
+     */
     public Police(Subject cook){
         this.cook = cook;
         this.cook.registerObserver(this);
@@ -16,6 +21,9 @@ public class Police implements Observer {
         people = new ArrayList<String>();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void update(String location, String description, ArrayList<String> accomplices) {
         boolean repeatLocation = false;
@@ -38,6 +46,9 @@ public class Police implements Observer {
 
         notes += "\n- " + description;
     }
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getLog() {
         String log = "Locations:";
