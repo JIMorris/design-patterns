@@ -6,7 +6,7 @@ public class ThirdGradeState extends State {
 
     public ThirdGradeState(SpellingList spellingList){
         super(spellingList);
-        setWords(FileReader.getWords(fileName));
+        words = FileReader.getWords(fileName);
     }
     public void increaseGrade(){
         System.out.println("Sorry, we currently only have up to third grade in our system...");
