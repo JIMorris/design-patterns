@@ -1,9 +1,17 @@
 package state;
 
+/**
+ * Third Grade Spelling List State
+ * @author Isaac Morris
+ */
 public class ThirdGradeState extends State {
 
     private static String fileName = "./state/txt/third.txt";
 
+    /**
+     * Creates a new ThirdGradeState for the given spellingList
+     * @param spellingList spellingList this State is for 
+     */
     public ThirdGradeState(SpellingList spellingList){
         super(spellingList);
         words = FileReader.getWords(fileName);
