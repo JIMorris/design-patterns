@@ -1,5 +1,9 @@
 package state;
 
+/**
+ * Spelling list with a first, second, and third grade state
+ * @author Isaac Morris
+ */
 public class SpellingList {
 
     private State state;
